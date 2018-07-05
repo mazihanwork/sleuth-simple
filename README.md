@@ -20,17 +20,17 @@ Spring Cloud Sleuth是Spring Cloud系列用来进行分布式日志追踪的工�
 可以使用spring cloud的bom统一管理这系列的组件引用版本号（可选）：
 
 ```html
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+<dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-dependencies</artifactId>
+			<version>${spring-cloud.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+	</dependencies>
+</dependencyManagement>
 ```
 `${spring-cloud.version}`是当前使用的cloud版本，这里用的是`Finchley.RELEASE`。
 
